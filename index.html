@@ -14,12 +14,12 @@
   <script type="text/babel">
     var HelloWorld = React.createClass({
       render: function() {
-        return <h1> Hi, {this.props.name}</h1>;
+        return <h1> Hi, {this.props.name} and I like {this.props.action}</h1>;
       }
     });
 
     ReactDOM.render(
-      <HelloWorld name="Andrew"/>,
+      <HelloWorld name="Andrew" action="take a rest"/>,
       document.getElementById('content')
     );
   </script>
