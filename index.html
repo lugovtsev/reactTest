@@ -12,11 +12,12 @@
 <body>
   <div id="content"></div>
   <script type="text/babel">
-    class ProductCategoryRow extends React.Component {
+  //var HelloWorld = React.createClass(
+    var ProductCategoryRow = React.createClass({
       render() {
         return (<tr><th colSpan="2">{this.props.category}</th></tr>);
       }
-    }
+    });
 
     class ProductRow extends React.Component {
       render() {
